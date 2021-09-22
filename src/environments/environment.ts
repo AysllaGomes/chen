@@ -4,6 +4,9 @@
 
 export const environment = {
     production: false,
+    api: {
+        url: 'http://api.chen.local.com'
+    },
     debugRequest: false,
     lang: 'pt',
 };
