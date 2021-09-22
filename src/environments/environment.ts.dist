@@ -1,5 +1,8 @@
 export const environment = {
-  production: true,
+    production: ~,
     debugRequest: false,
     lang: 'pt',
+    api: {
+        url: ~
+    }
 };
