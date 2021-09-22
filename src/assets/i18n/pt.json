@@ -1,0 +1,734 @@
+{
+    "shared": {
+        "component": {
+            "grid": {
+                "action": "Ações",
+                "empty": "Nenhum registro encontrado",
+                "pagination": "Total de cadastro(s)"
+            },
+            "tab": {
+                "confidential": {
+                    "general": "Público",
+                    "particular": "Confidencial",
+                    "government": "Confidencial (Governo)",
+                    "copyToGeneral": "Copiar informação pública"
+                },
+                "updateStatus": {
+                    "gtat": "GTAT-TEC",
+                    "litigant": "Pleiteante"
+                },
+                "document": {
+                    "document": "Documentos",
+                    "history": "Histórico"
+                }
+            },
+            "pCalendar": {
+                "firstDayOfWeek": 0,
+                "dayNames": [
+                    "Domingo",
+                    "Segunda",
+                    "Terça",
+                    "Quarta",
+                    "Quinta",
+                    "Sexta",
+                    "Sábado"
+                ],
+                "dayNamesShort": [
+                    "Dom",
+                    "Seg",
+                    "Ter",
+                    "Qua",
+                    "Qui",
+                    "Sex",
+                    "Sáb"
+                ],
+                "dayNamesMin": [
+                    "Do",
+                    "Se",
+                    "Te",
+                    "Qu",
+                    "Qu",
+                    "Se",
+                    "Sa"
+                ],
+                "monthNames": [
+                    "Janeiro",
+                    "Fevereiro",
+                    "Março",
+                    "Abril",
+                    "Maio",
+                    "Junho",
+                    "Julho",
+                    "Agosto",
+                    "Setembro",
+                    "Outubro",
+                    "Novembro",
+                    "Dezembro"
+                ],
+                "monthNamesShort": [
+                    "Jan",
+                    "Fev",
+                    "Mar",
+                    "Abr",
+                    "Mai",
+                    "Jun",
+                    "Jul",
+                    "Ago",
+                    "Set",
+                    "Out",
+                    "Nov",
+                    "Dez"
+                ],
+                "today": "Hoje",
+                "clear": "Limpar"
+            }
+        },
+        "yes": "Sim",
+        "no": "Não"
+    },
+    "tec": {
+        "form": {
+            "autocomplete": {
+                "empty": "Nenhum registro encontrado"
+            }
+        }
+    },
+    "actions": {
+        "cancel": "Cancelar",
+        "clear": "Limpar",
+        "concludeRegistration": "Concluir cadastro",
+        "save": "Salvar"
+    },
+    "grid": {
+        "empty": "Nenhum registro encontrado",
+        "count": "Total de cadastro(s): {{count}}",
+        "actions": {
+            "toggleActivate": "Ativar/Inativar",
+            "update": "Editar",
+            "delete": "Excluir"
+        },
+        "error": {
+            "load": "Erro ao carregar"
+        }
+    },
+    "auth": {
+        "login": {
+            "title": "Autenticação",
+            "actions": {
+                "access": "Entrar",
+                "register": "Criar conta",
+                "recover_password": "Recuperar senha"
+            },
+            "fields": {
+                "username": {
+                    "label": "Login",
+                    "title": ""
+                },
+                "password": {
+                    "label": "Senha",
+                    "title": ""
+                }
+            },
+            "error": {
+                "updateInternalCredential": "Não foi possível atualizar seus dados, pois o seu e-mail {{email}} já está sendo utilizado por outro usuário."
+            }
+        },
+        "passwordRecovery": {
+            "title": "Recuperar senha",
+            "saveSuccess": "Sucesso!",
+            "saveSuccessComplement": "A senha foi enviada para {{email}}",
+            "actions": {
+                "back": "Voltar",
+                "recoverPassword": "Recuperar senha"
+            },
+            "fields": {
+                "email": {
+                    "label": "Login",
+                    "title": "Campo de livre preenchimento para informar email de usuários Pleiteante ou GTAT-TEC"
+                }
+            }
+        }
+    },
+    "credential": {
+        "new": {
+            "title": "Novo usuário",
+            "externalTitle": "Cadastre-se",
+            "saveSuccess": "Usuário cadastrado com sucesso!",
+            "saveSuccessComplement": "E-mail de confirmação de cadastro enviado para {{email}}",
+            "fields": {
+                "profile": {
+                    "label": "Perfil *",
+                    "title": "Perfil de acesso de usuário"
+                },
+                "name": {
+                    "label": "Nome completo",
+                    "title": "Nome do usuário que está se cadastrando"
+                },
+                "organizationUnit": {
+                    "label": "Órgão *",
+                    "title": "Órgão do usuário que está sendo cadastrado"
+                },
+                "office": {
+                    "label": "Cargo",
+                    "title": "Cargo do usuário que está sendo cadastrado"
+                },
+                "email": {
+                    "label": "E-mail",
+                    "title": "E-mail do usuário que está se cadastrando"
+                },
+                "emailConfirmation": {
+                    "label": "Confirmar e-mail",
+                    "title": "Confirmação do e-mail do usuário que está se cadastrando"
+                },
+                "password": {
+                    "label": "Senha",
+                    "title": "Senha do usuário que está se cadastrando"
+                },
+                "passwordConfirmation": {
+                    "label": "Confirmar senha",
+                    "title": "Confirmação da senha do usuário que está se cadastrando"
+                },
+                "registrationNumber": {
+                    "label": "CPF",
+                    "title": "CPF do usuário que está se cadastrando"
+                },
+                "phone": {
+                    "label": "Telefone",
+                    "title": "Contato telefônico do usuário que está se cadastrando"
+                },
+                "status": {
+                    "label": "Status",
+                    "title": "Status do usuário que está se cadastrando"
+                }
+            }
+        },
+        "edit": {
+            "title": "Editar usuário",
+            "saveSuccess": "Usuário editado com sucesso"
+        },
+        "editEmail": {
+            "saveSuccessEmail": "Usuário editado com sucesso. O email de acesso foi alterado e será necessário efetuar login novamente. Você será deslogado."
+        },
+        "selfData": {
+            "title": "Meus dados",
+            "fields": {
+                "name": "Nome completo",
+                "email": "E-mail",
+                "username": "Usuário",
+                "status": "Status",
+                "profile": "Perfil"
+            }
+        },
+        "changePassword": {
+            "title": "Redefinir Senha",
+            "fields": {
+                "pastPassword": {
+                    "label": "Senha atual",
+                    "title": "Senha atual do usuário"
+                },
+                "password": {
+                    "label": "Nova senha",
+                    "title": "Nova senha do usuário."
+                },
+                "passwordConfirmation": {
+                    "label": "Confirmar nova senha",
+                    "title": "Confirmação da senha do usuário que está realizando alterações"
+                }
+            },
+            "actions": {
+                "save": "Salvar",
+                "cancel": "Cancelar"
+            }
+        },
+        "view": {
+            "title": "Detalhes do usuário",
+            "fields": {
+                "name": "Nome completo",
+                "email": "E-mail",
+                "organizationUnit": "Órgão",
+                "office": "Cargo",
+                "registrationNumber": "CPF",
+                "username": "Usuário",
+                "phoneNumber": "Telefone",
+                "status": "Status",
+                "profile": "Perfil",
+                "credentialType": "Tipo de usuário",
+                "creationType": "Tipo de cadastro"
+            },
+            "action": {
+                "update": "Editar",
+                "back": "Voltar"
+            }
+        },
+        "list": {
+            "title": "Usuários",
+            "create": "Cadastrar"
+        },
+        "search": {
+            "action": {
+                "search": "Pesquisar",
+                "clear": "Limpar"
+            },
+            "fields": {
+                "name": "Nome",
+                "profile": "Perfil",
+                "email": "E-mail",
+                "status": "Status",
+                "organizationUnit": "Órgão",
+                "office": "Cargo"
+            }
+        },
+        "grid": {
+            "column": {
+                "name": "Nome",
+                "email": "E-mail",
+                "profile": "Perfil",
+                "status": "Status",
+                "organizationUnit": "Órgão",
+                "office": "Cargo"
+            },
+            "loadingInternalUser": "Atualizando usuários internos",
+            "loadingEditUser": "Carregando dados do usuário",
+            "action": {
+                "message": {
+                    "activate": "Usuário ativado com sucesso",
+                    "deactivate": "Usuário inativado com sucesso",
+                    "delete": "Deseja confirmar a exclusão do usuário {{name}}?"
+                }
+            },
+            "error": {
+                "uncreatedInternalCredentialList": "Os usuários abaixo não puderam ser atualizados/cadastrados pois já existem usuários externos utilizando os e-mails destes usuários: <br><b>{{userList}}</b>"
+            }
+        },
+        "selfCreation": "Auto cadastro",
+        "createdBy": "Cadastrado por {{name}}",
+        "error": {
+            "internalUserLoad": "Erro ao atualizar os usuários internos"
+        }
+    },
+    "process": {
+        "title": "Controle de Processos",
+        "message": {
+            "draft": "Processo salvo como rascunho",
+            "sent": "Processo enviado com sucesso"
+        },
+        "form": {
+            "label": {
+                "import": "Importação",
+                "export": "Exportação",
+                "international": "Internacional",
+                "national": "Nacional"
+            },
+            "action": {
+                "draft": "Salvar como rascunho",
+                "sent": "Enviar"
+            },
+            "grid": {
+                "unitValue": {
+                    "add": "Adicionar",
+                    "country": "País",
+                    "month": "Mês",
+                    "year": "Ano",
+                    "quantity": "Unid.",
+                    "value": "US$/Unid.",
+                    "total": "US$"
+                }
+            },
+            "fields": {
+                "measureUnit": {
+                    "title": "Unidade utilizada"
+                },
+                "1": {
+                    "title": "1 - Dados do solicitante",
+                    "a": "a) Nome da empresa ou entidade  ou entidade pleiteante",
+                    "b": "b) Endereço da empresa ou entidade pleiteante",
+                    "c": "c) Telefone",
+                    "d": "d) Pessoa p/ contato",
+                    "e": "e) Cargo",
+                    "f": "f) E-mail"
+                },
+                "2": {
+                    "title": "2 - Informação acerca  da lista pretendida/tipo de pleito"
+                },
+                "3": {
+                    "title": "3 - Caracterização do produto",
+                    "a": "a) Nome comercial ou marca",
+                    "b": "b) Nome técnico ou científico",
+                    "c": "c) Código na Nomenclatura Comum do Mercosul (NCM)",
+                    "d": "d) Tarifa de importação - alíquota da Tarifa Externa Comum (TEC)",
+                    "e": "e) Tarifa de importação no Brasil: alíquota atual",
+                    "f": "f) Função principal (e secundária se for o caso)",
+                    "g": "g) Descrição sucinta da forma de uso do produto",
+                    "h": "h) Princípio e descrição de funcionamento",
+                    "i": "i) Processo de obtenção",
+                    "j": "j) Matérias ou materiais, respectivas NCMs e percentagens em peso",
+                    "k": "k) Bens substituídos",
+                    "l": "l) O produto está ou já esteve amparado por alguma medida de alteração temporária da TEC ou medida de defesa comercial?",
+                    "l_description": "Qual o mecanismo, período e alíquota?",
+                    "l_request": "Há solicitação formal nesse sentido?",
+                    "m": "m) O produto está em análise ou já foi objeto de solicitação de alteração definitiva da TEC no âmbito do Comitê Técnico no 1 do Mercosul (CT 1)?",
+                    "n": "n) O produto está coberto por acordos internacionais nos quais o Brasil conceda ou receba preferência tarifária? Especificar nos termos da lista exemplificativa abaixo.",
+                    "n_table": {
+                        "header": {
+                            "margin": "Margem de preferência",
+                            "agreement": "Acordo",
+                            "country": "País",
+                            "granted": "Concedida %",
+                            "received": "Recebida %"
+                        }
+                    }
+                },
+                "4": {
+                    "title": "4 - Informações acerca da alteração pretendida",
+                    "a": "a) Informar alíquota de importação pretendida",
+                    "b": "b) Período de vigência solicitado",
+                    "c": "c) Justificativa da necessidade de alteração tarifária",
+                    "d": "d) Impactos da Alteração Pretendida"
+                },
+                "5": {
+                    "cost": {
+                        "form": {
+                            "costStructure": "Item",
+                            "description": "Descrição",
+                            "nationalCost": "US$ Nacional",
+                            "importedCost": "US$ Importado"
+                        }
+                    },
+                    "title": "5 - Informações sobre a oferta",
+                    "a": "a) Capacidade nominal instalada nacional e regional (Mercosul) em unidades físicas e em valor",
+                    "b": "b) Produção nacional e regional (Mercosul) - Informar dados dos últimos três anos, por empresa, e os disponíveis para o ano em curso, em unidades físicas e  em valor",
+                    "c": "c) Empregos diretos",
+                    "c_table": {
+                        "field": "Nº empregos diretos gerados"
+                    },
+                    "d": "d) Principais fabricantes no Brasil e no Mercosul",
+                    "d_form": {
+                        "companyName": "Nome da empresa",
+                        "companyEmail": "E-mail",
+                        "companyAddress": "Endereço",
+                        "companyPhone": "Telefone",
+                        "additionalInformation": "Outras informações"
+                    },
+                    "e": "e) Consumo nacional e regional (Mercosul) - informar dados dos últimos três anos e os disponíveis para o ano em curso, em unidades físicas e em valor",
+                    "f": "f) Principais Consumidores no Brasil e no Mercosul",
+                    "g": "g) Importações e exportações - informar dados dos últimos três anos e os disponíveis para o ano em curso, em unidades físicas e em valor (US$ FOB)",
+                    "h": "h) Evolução mensal de preços praticados nacional e internacional - informar valores por unidade em US$, nos três anos anteriores e no ano em curso",
+                    "i": "i) Estrutura de custos de fabricação do produto (em US$ por unidade física de medida)",
+                    "j": "j) Custos de internação (em US$ por unidade física de medida; especificar data, país de origem, local de desembaraço no Brasil e alíquota dos  impostos e contribuições)",
+                    "j_additionalInformation": "Especificar no campo abaixo a data, o país de origem e o local de desembaraço no Brasil",
+                    "j_table": {
+                        "item": "Item",
+                        "aliquot": "Alíquota %",
+                        "currentTariffCalculation": "Valores com a Tarifa Vigente",
+                        "requestCurrentTariff": "Valores com a Tarifa Solicitada"
+                    }
+                },
+                "6": {
+                    "title": "6 - Informações complementares bem final",
+                    "a": "a) Listar os bens finais aos quais o produto é incorporado (indicar NCM) e percentual de participação do insumo ou matéria-prima",
+                    "a_form": {
+                        "ncmSubItem": "Bem final (NCM)",
+                        "participationPercentage": "% de participação do insumo ou matéria prima",
+                        "additionalInformation": "Observações"
+                    },
+                    "b": "b) Produção, importações e exportações brasileiras dos principais bens finais  informar os dados dos últimos três anos e os disponíveis para o ano em curso em unidades físicas e em valor",
+                    "c": "c) Resumo do processo de incorporação do insumo ou matéria-prima aos bens finais",
+                    "d": "d) Tarifa dos componentes da cadeia produtiva",
+                    "e": "e) Estrutura de custos do bem final (utilizar os formatos indicado no item 6)",
+                    "f": "f) Se o produto está ou já esteve amparado por alguma medida de alteração temporária da TEC ou medida de defesa comercial, detalhar o impacto na estrutura de custo da cadeia produtiva"
+                },
+                "7": {
+                    "title": "7 - Outras informações relevantes",
+                    "a": "a) (Relacionar outras informações que justificam o mérito e a relevância econômica do pleito, dentre informações setoriais importantes como: capacidade produtiva atual e existência de investimentos para ampliá-la, organização da cadeia produtiva, presença de monopólios ou oligopólios, barreiras à importação e exportação etc.)"
+                },
+                "8": {
+                    "title": "8 - Dados complementares",
+                    "a": "a)  Nome técnico ou científico",
+                    "b": "b) Marca registrada, modelo, tipo e fabricante",
+                    "c": "c) Função principal e secundária",
+                    "d": "d) Princípio e descrição resumida do funcionamento",
+                    "e": "e) Aplicação, uso ou emprego",
+                    "f": "f) Forma de acoplamento de motor a máquinas ou aparelhos, quando for o caso",
+                    "g": "g) Dimensões e peso líquido",
+                    "h": "h) Peso molecular, ponto de fusão e densidade (para produtos do capítulo 39 da NCM)",
+                    "i": "i) Forma (Líquido, pó, escamas, etc.) e apresentação (tambores ,caixas ,etc., com respectivas capacidades em peso ou em volume)",
+                    "j": "j) Matéria ou materiais de que é constituída a mercadoria e suas percentagens em peso ou em volume",
+                    "k": "k) Processo detalhado de obtenção",
+                    "l": "l) Código do produto, de acordo com a NCM",
+                    "m": "m) Sugestão de descrição para o produto, utilizando o padrão da NCM, sem incluir marca comercial, modelo ou tipo de equipamento ou procedência",
+                    "n": "n) Especificações técnicas detalhadas, acompanhadas de catálogos técnicos originais ou literatura técnica pertinente",
+                    "o": "o) Composição qualitativa e quantitativa (empresas químicas e conexas)",
+                    "p": "p) Fórmula química bruta e estrutural (empresas químicas e conexas)"
+                }
+            }
+        },
+        "spreadsheet": {
+            "fields": {
+                "name": {
+                    "label": "Título da planilha *",
+                    "title": "Título da planilha que será gerado uma planilha"
+                }
+            },
+            "search": {
+                "action": {
+                    "protocoledAt_initial": "Período de protocolo (Inicial)",
+                    "protocoledAt_final": "Período de protocolo (Final)",
+                    "year": "Ano",
+                    "firstSemester": "1º Semestre",
+                    "secondSemester": "2º Semestre",
+                    "statusLitigant": "Status - Pleiteante",
+                    "publish": "Publicável"
+                }
+            }
+        },
+        "document": {
+            "title": "Anexar Arquivo",
+            "actions": {
+                "action": {
+                    "save": "Anexar",
+                    "cancel": "Cancelar"
+                }
+            }
+        },
+        "extension": {
+            "title": "Documentação de Prorrogação",
+            "fields": {
+                "title": "Documentar a prorrogação automática do Processo",
+                "justification": "Justificativa",
+                "document": "Anexo"
+            },
+            "action": {
+                "save": "Salvar",
+                "cancel": "Cancelar"
+            }
+        },
+        "manifestation": {
+            "title": "Manifestação Contrária",
+            "fields": {
+                "title": "Adicionando a manifestação contrária ao processo",
+                "justification": "Justificativa",
+                "document": "Anexos",
+                "indication": "Indicar manifestação contrária"
+            },
+            "action": {
+                "save": "Salvar",
+                "cancel": "Cancelar"
+            }
+        },
+        "search": {
+            "action": {
+                "create": "Cadastrar Processo",
+                "search": "Pesquisar",
+                "clear": "Limpar",
+                "spreadsheet": "Gerar planilha de acompanhamento",
+                "spreadsheet_action": "Gerar planilha",
+                "cancel": "Cancelar",
+                "search_spreadsheet": "Buscar"
+            },
+            "fields": {
+                "protocol": {
+                    "label": "N.º SEI",
+                    "title": "Lista o número do protocolo SEI atribuído ao processo"
+                },
+                "companyName": {
+                    "label": "Solicitante",
+                    "title": "Lista o nome da empresa solicitante"
+                },
+                "credential": {
+                    "label": "Representante",
+                    "title": "Nome do usuário externo que enviou o processo"
+                },
+                "alterLitigant": {
+                    "label": "Alteração pleiteada",
+                    "title": "Alterações pleiteadas selecionadas no item 2 - Informação acerca da lista pretendida/tipo de pleito"
+                },
+                "product": {
+                    "label": "Produto",
+                    "title": "Código e descrição da NCM do produto"
+                },
+                "deadlineForPublication": {
+                    "label": "Prazo /p publicação",
+                    "title": "Lista o prazo para publicação do processo"
+                },
+                "deadlineForAnalysis": {
+                    "label": "Prazo /p análise",
+                    "title": "Lista o prazo para análise do processo"
+                },
+                "hasManifestation": {
+                    "label": "Manifestação contrária",
+                    "title": "Lista se o processo recebeu ou não, manifestação contrária"
+                },
+                "hasExtendedAnalysisDocumentation": {
+                    "label": "Processos Prorrogados",
+                    "title": "Lista se o processo recebeu ou não, a extesão do prazo"
+                },
+                "isPublished": {
+                    "label": "Publicável",
+                    "title": "Lista se o processo está ou não disponível para publicação"
+                },
+                "updatedAtStart": {
+                    "label": "Última atualização (Data inicial)",
+                    "title": "Campo para preencher a primeira data do período"
+                },
+                "updatedAtEnd": {
+                    "label": "Última atualização (Data final)",
+                    "title": "Campo para preencher a segunda data do período"
+                },
+                "postedAtStart": {
+                    "label": "Data do envio (Data inicial)",
+                    "title": "Campo para preencher a primeira data do período"
+                },
+                "postedAtEnd": {
+                    "label": "Data do envio (Data final)",
+                    "title": "Campo para preencher a segunda data do período"
+                },
+                "receiptAtStart": {
+                    "label": "Data de recebimento (Data inicial)",
+                    "title": "Campo para preencher a primeira data do período"
+                },
+                "receiptAtEnd": {
+                    "label": "Data do recebimento (Data final)",
+                    "title": "Campo para preencher a segunda data do período"
+                },
+                "status": {
+                    "label": "Status",
+                    "title": "Status assumido pelo processo durante suas transições"
+                },
+                "statusGtat": {
+                    "label": "Status GTAT-TEC",
+                    "title": "Status assumido pelo processo durante suas transições"
+                },
+                "statusGecex": {
+                    "label": "Status Pleiteante",
+                    "title": "Status assumido pelo processo durante suas transições"
+                }
+            }
+        },
+        "action": {
+            "message": {
+                "extended": "Deseja confirmar a operação?",
+                "extendedSuccess": "Documentação da prorrogação do processo N.º SEI: {{numberSei}}",
+                "disregard": "Deseja confirmar a desconsideração? Favor preencha uma justificativa",
+                "protocol": "Processo protocolado com sucesso! N.º SEI: {{numberSei}}",
+                "circulates": "Processo circulado com sucesso! E-mail(s) enviado(s) para: {{email}}",
+                "document": "Arquivo(s) anexado(s) com sucesso!"
+            }
+        }
+    },
+    "validations": {
+        "required": "Campo obrigatório não preenchido",
+        "requiredFile": "Nenhum arquivo foi selecionado",
+        "minlength": "Informe no mínimo {{p0}}",
+        "maxlength": "Informe no máximo {{p0}}",
+        "pattern": "Forneça um valor válido",
+        "rangeLength": "Forneça um valor entre {{p0}} e {{p1}} caracteres de comprimento",
+        "length": "É necessário digitar {{p0}} caracteres",
+        "min": "Forneça um valor maior ou igual a {{p0}}",
+        "gt": "Forneça um valor maior a {{p0}}",
+        "gte": "Forneça um valor maior ou igual a {{p0}}",
+        "max": "O número é muito grande",
+        "lt": "Forneça um valor menor a {{p0}}",
+        "lte": "Forneça um valor menor ou igual a {{p0}}",
+        "range": "Forneça um valor entre {{p0}} e {{p1}}",
+        "digits": "Forneça somente dígitos",
+        "number": "Forneça um número válido",
+        "url": "Forneça uma URL válida",
+        "email": "Favor informar um e-mail válido",
+        "date": "Forneça uma data válida",
+        "minDate": "Forneça uma data menor ou igual a {{p0}}",
+        "maxDate": "Forneça uma data maior ou igual a {{p0}}",
+        "dateISO": "Forneça uma data válida (ISO)",
+        "monthYear": "Forneça um mês/ano válido",
+        "creditCard": "Forneça um cartão de crédito válido",
+        "json": "Forneça um JSON válido",
+        "base64": "Forneça um base64 válido",
+        "phone": "Forneça um telefone válido",
+        "uuid": "Forneça um identificador único universal válido",
+        "equal": "Forneça um valor igual a {{p0}}",
+        "notEqual": "Forneça o mesmo valor novamente",
+        "equalTo": "Forneça o mesmo valor novamente",
+        "notEqualTo": "Não forneça o valor {{p0}}",
+        "cpf": "Favor informar um CPF válido",
+        "cnpj": "Favor informar um CNPJ válido",
+        "arrayMinChecked": "Escolha pelo menos {{p0}} itens",
+        "passwordRules": "A senha deve ser composta de 8 dígitos com no mínimo um número, um carácter especial e uma letra maiúscula.",
+        "required_unless": "Preencha pelo menos um desses campos",
+        "unique": "Informe valores diferentes",
+        "maxBinarySize": "Tamanho máximo de {{max}} {{metric}}",
+        "fileFormat": "Apenas os seguintes formatos são válidos: {{p0}}",
+        "confirm": "Os campos não coincidem",
+        "equalYear": "Informe anos diferentes",
+        "requiredYear": "O ano é obrigatório"
+    },
+    "status": {
+        "1": "Ativo",
+        "2": "Inativo"
+    },
+    "message": {
+        "error": "Erro",
+        "warning": "Atenção",
+        "success": "Sucesso"
+    },
+    "credentialType": {
+        "1": "Usuário Interno",
+        "2": "Usuário Externo",
+        "3": "Usuário GTAT-TEC"
+    },
+    "audit": {
+        "fieldName": {
+            "TB_TELEFONE#NU_NUMERO": "Telefone",
+            "TX_ENDERECO": "Endereço",
+            "DT_FIM": "Fim",
+            "ID_SITUACAO_PROJETADA": "Situação projetada",
+            "ID_VISIBILIDADE": "Visibilidade",
+            "TX_CARGO": "Cargo",
+            "TX_APELIDO": "Apelido",
+            "ID_CRIADOR": "Criador",
+            "ID_ACORDO": "Acordo",
+            "ID_GRUPO": "Grupo",
+            "DT_ALTERACAO": "Alterado em",
+            "ID_RECURSO": "Recurso",
+            "TX_LOGIN": "Usuário",
+            "ID_TIPO": "Tipo",
+            "ID_MANIFESTACAO": "Manifestação",
+            "ID_PESSOA": "Pessoa",
+            "CD_CODIGO": "Código",
+            "ID_PESSOA_FISICA": "Pessoa Física",
+            "CD_CPF": "Cpf",
+            "ID_ACORDO_PAIS": "Acordo/País",
+            "TX_EMAIL": "Email",
+            "DT_EXIBICAO": "Exibição",
+            "NU_NUMERO": "Número",
+            "ID_CONTATO": "Contato",
+            "ID_SITUACAO": "Situação",
+            "NU_ANO": "Ano",
+            "TX_ASSUNTO": "Assunto",
+            "ID_PERFIL": "Perfil",
+            "DT_INICIO": "Início",
+            "TX_NOME_LOGICO": "Nome lógico",
+            "ID_SITUACAO_APELIDO": "Apelido da situação",
+            "TX_SENHA": "Senha",
+            "TX_NOME": "Nome",
+            "LO_PUBLICADO": "Publicado",
+            "ID_SITUACAO_PROXIMA": "Proxima situação",
+            "ID_PROCESSO": "Processo",
+            "ID_PRODUTO": "Produto",
+            "ID_RESPONSAVEL": "Responsável",
+            "ID_ABRANGENCIA": "Abrangência",
+            "LO_ALTERACAO_CT1": "Tem alteração CT1",
+            "ID_PAIS": "País",
+            "ID_CADASTRANTE": "Cadastrante",
+            "ID_DOCUMENTO": "Documento",
+            "ID_CREDENCIAL": "Usuário",
+            "ID_CUSTO": "Custo",
+            "ID_DECLARANTE": "Declarante",
+            "ID_COMPARTILHAMENTO": "Circulação",
+            "DT_ALTERACAO_PUBLICA": "Alterado publicamente em",
+            "DT_CRIACAO": "Criado em",
+            "ID_UNIDADE_ORGANIZACIONAL": "Unidade organizacional",
+            "TX_DESCRICAO": "Descrição",
+            "DT_REFERENCIA": "Data de referência",
+            "ID_PESSOA_JURIDICA": "Empresa/Entidade"
+        }
+    }
+}
